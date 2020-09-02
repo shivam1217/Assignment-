@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Exercise 5 - Shiva </title>
+</head>
+<body>
+	<script type="text/javascript">
+		function a(){
+		var value = document.getElementById("ch").value;
+		if(isNaN(value)==false){
+			document.getElementById("hell").innerHTML = "Entered Value " + value + " is not NaN.";
+		}
+		else{
+			document.getElementById("hell").innerHTML = "Entered Value " + value + " is NaN.";
+		}
+		}
+
+		function b(){
+
+		var p1 = document.getElementById("p1").value;
+
+		var p2 = document.getElementById("p2").value;
+
+		if(p1==p2){
+			document.getElementById("ell").innerHTML = "Both Password Match";
+		}
+
+		else{
+			document.getElementById("ell").innerHTML = "Both Password Dont match";
+		}
+
+		}
+	</script>
+
+	Enter some thing to determine if it is NaN or not.
+	<input id="ch" type="text" name="input">
+	<button type="button" onclick="a();">Check</button>
+	<p id="hell"></p>
+	<br> <br>
+
+	Password 1
+	<input type="password" id="p1"> <br>
+	Password 2
+	<input type="password" id="p2">
+	<button type="button" onclick="b();">Check</button>
+	<p id="ell"></p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Exercise 2 - shiva </title>
+</head>
+<body>
+	<h2>Click the Text Below to change it.</h2>
+	<script type="text/javascript">
+		function change()
+		{
+			document.getElementById("hello").innerHTML = "Hello Nepal";
+		}
+		function display()
+		{
+			document.getElementById("time").innerHTML = new Date();
+		}
+	</script>
+	<h1 id="hello" onclick="change();">Hello World</h1>
+	<button onclick="display();">Click to see time</button>
+	<p id="time"></p>
+</body>
+</html> 
