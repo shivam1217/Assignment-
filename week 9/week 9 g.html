@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Layout with CSS & HTML</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: Arial;
+			padding: 10px;
+			background-color: #f1f1f1;
+		}
+	    #container {
+			width:1140px;
+			min-height: 800px;
+			margin: 0 auto;
+		}
+		.topnav{
+			overflow: hidden;
+			background-color: #333;
+			/* width: 100%;
+			height:40px; */
+		}
+		.topnav a{
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.topnav a:hover{
+			background-color: #ddd;
+			color:black;		}
+		.header{
+			padding: 20px;
+			text-align: center;
+			background: white;
+		}
+		.header h1{
+			font-size: 50px;
+		}
+
+		.row:after {
+			clear:both;
+		}
+
+		.leftcolumn{
+			float:left;
+			width:75%;
+		}
+		.rightcolumn{
+			float:left;
+			width:25%;
+			background-color: #f1f1f1;
+			padding-left:20px;
+		}
+
+		.fakeimg {
+			background-color: #aaa;
+			width:100%;
+			padding:20px;
+		}
+		.card{
+			background-color: white;
+			padding:20px;
+			margin-top:20px;
+			border: 1px #ccddee;
+			border-radius: 0px 10px 0px 10px;
+		}
+	</style>	
+</head>
+<body> 
+    <div id="container">
+        <div class="topnav">
+            <a href="#"> Link 1 </a>
+            <a href="#"> Link 2 </a> 
+            <a href="#"> Link 3 </a>
+            <a href="#"> Link 4 </a>
+        </div>
+        <div class="header">
+        	<h1> My Company Name </h1>
+        	<p> Some Paragraph Text </p>
+        </div>
+
+        <div class="row">
+        	<div class="leftcolumn">
+        		<div class="card">
+        			<h2> Title Heading </h2>
+        			<h5> Title Description - Date </h5>
+        			<div class="fakeimg" style="height: 200px">
+        				Image
+        			</div>
+        			<p> Some Paragraph Text </p>
+        			<p> one More Paragraph Text </p>
+        		</div>
+        		<div class="card">
+        			<h2> Title Heading </h2>
+        			<h5> Title Description - Date </h5>
+        			<div class="fakeimg" style="height: 200px">
+        				Image
+        			</div>
+        			<p> Some Paragraph Text </p>
+        			<p> one More Paragraph Text </p>
+        		</div>			
+        	</div>
+        	<div class="rightcolumn">
+        		<div class="card">
+        			<h2> Heading 2 </h2>
+        			<div class="fakeimg" style="height:100px">Image </div>
+        			<p> Some Paragraph </p>
+        		</div>	
+        	</div>	
+        </div>  
+    </div>  
+
+</body>
+</html> 
