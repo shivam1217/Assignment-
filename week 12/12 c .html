@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Exercise 3 - Shiva marasini</title>
+</head>
+<style type="text/css">
+	.div{
+		background-color: red;
+		color: white;
+	}
+	.div1{
+		background-color: blue;
+		color: white;
+	}
+</style>
+<body>
+	<script type="text/javascript">
+		function mOver()
+		{
+			document.getElementById("div1").innerHTML = "Thank You" ;
+		}
+
+		function mOut()
+		{
+			document.getElementById("div2").innerHTML = "Mouse Over Me" ;
+		}
+	</script>
+	<br>
+	<br>
+	<div id="div1" class="div" onmouseover="mOver();" >
+		Move Mouse here to change txt.
+	</div>
+	<br>
+	<br>
+	<div id="div2" class="div1" onmouseout="mOut();" >
+		Move Mouse here to change txt.
+	</div>
+</body>
+</html> 
