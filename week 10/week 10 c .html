@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: aliceblue;
+  display: flex;
+  border-bottom: 2px solid purple;
+}
+
+.logo img {
+  width: 150px;
+  height: 100px;
+  margin: 20px 0px 50px;
+  position: absolute;
+  left: 40px;
+  top: -13px;
+}
+
+.menu {
+  justify-self: left;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  left: 640px;
+  background-color: seashell;
+}
+
+.menu ul li:hover {
+  background-color: burlywood;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text {
+    font-family: cursive;
+    font-size: 18px;
+    position: absolute;
+    top: 85px;
+    right: 25px;
+}
+
+.main {
+    padding: 85px 0px 0px 150px;
+}
+
+.cards {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: green;
+}
+
+.para {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main h2 {
+    font-family: cursive;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.card1 {
+    margin: 25px 50px 0px 20px;
+    width: 620px;
+    height: 380px;
+    background-color: palegoldenrod;
+    position: relative;
+    left: -130px;
+}
+
+.card2 {
+    margin: 25px 50px 0px 20px;
+    width: 620px;
+    height: 380px;
+    background-color: palegoldenrod;
+    position: relative;
+    left: 530px;
+    top: -406px;
+}
+
+.card3 {
+    margin: 25px 50px 0px 20px;
+    width: 620px;
+    height: 380px;
+    background-color: palegoldenrod;
+    position: relative;
+    left: -130px;
+    top: -400px;
+}
+
+.card4 {
+    margin: 25px 50px 0px 20px;
+    width: 620px;
+    height: 380px;
+    background-color: palegoldenrod;
+    position: relative;
+    left: 530px;
+    top: -806px;
+}
+
+.image {
+    position: absolute;
+    top: -20px;
+    left: 15px;
+    margin-right: 20px;
+    margin-top: 10px;
+    float: left;
+}
+
+.card-content {
+    font-size: 20px;
+    position: relative;
+    width: 300px;
+    top: 30px;
+    left: 230px;
+}
+
+.card:hover {
+    box-shadow: -3px, 2px 3px lightcoral;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-left: 30px;
+    border-top: 2px solid purple;
+    display: flex;
+}
+
+.footer-body {
+    padding-left: 35px 0px 0px 50px;
+}
+
+.left {
+    font-family: cursive;
+    width: 200px;
+    height: 100%;
+    color:rebeccapurple;
+    font-size: 16px;
+    padding: 0px 0px 70px 20px;
+    border-right: 2px solid purple;
+    line-height: 24px;
+}
+
+.left a {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+.middle {
+    font-family: cursive;
+    width: 500px;
+    height: 100%;
+    color: rebeccapurple;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-bottom: 80px;
+    border-right: 2px solid purple;
+    line-height: 18px;
+}
+
+.right {
+    margin-left: 35px;
+}
+
+.map {
+    float: left;
+    top: -80px;
+}
+
+.contact {
+    font-family: cursive;
+    font-size: 18px;
+    float: right;
+    width: 100px;
+    height: 100%;
+    color: rebeccapurple;
+    position: relative;
+    right: -80px;
+    top: -5px;
+}    
+    <title>Task 3</title>
+    <link rel="stylesheet" href="styles.css">
+</style>    
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.jpg" alt="CocaCola logo." width="100px">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <div class="who">
+                    <li><a href="#">Who We Work With</a></li>
+                </div>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            Calle de tu opino 20, 280290, Madrid td.91 756
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>Who We Work With</h2>
+        <div class="cards">
+
+            <div class="card1">
+                <div class="image">
+                    <img src="logo.jpg" alt="CocaCola logo" width="200px" height="150px">
+                </div>
+
+                <div class="card-content">
+                    <div class="name">
+                        <p>CocaCola</p>
+                    </div>
+                    <div class="para">
+                        <p>Steve Jobs - CEO</p>
+                    </div>
+                    <hr size="2px" color="black">
+                    <p>
+                        Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        sit amet consectetur adipisicing elit. Est temporibus labore sit voluptatibus.
+                        Animi cum beatae eos quos odit qui repellendus quo officia quaerat aperiam numquam,
+                        consequuntur, provident sint! Commodi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="image">
+                    <img src="logo.jpg" alt="CocaCola logo" width="200px" height="150px">
+                </div>
+
+                <div class="card-content">
+                    <div class="name">
+                        <p>CocaCola</p>
+                    </div>
+                    <div class="para">
+                        <p>Steve Jobs - CEO</p>
+                    </div>
+                    <hr size="2px" color="black">
+                    <p>
+                        Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        sit amet consectetur adipisicing elit. Est temporibus labore sit voluptatibus.
+                        Animi cum beatae eos quos odit qui repellendus quo officia quaerat aperiam numquam,
+                        consequuntur, provident sint! Commodi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card3">
+                <div class="image">
+                    <img src="logo.jpg" alt="CocaCola logo" width="200px" height="150px">
+                </div>
+
+                <div class="card-content">
+                    <div class="name">
+                        <p>CocaCola</p>
+                    </div>
+                    <div class="para">
+                        <p>Steve Jobs - CEO</p>
+                    </div>
+                    <hr size="2px" color="black">
+                    <p>
+                        Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        sit amet consectetur adipisicing elit. Est temporibus labore sit voluptatibus.
+                        Animi cum beatae eos quos odit qui repellendus quo officia quaerat aperiam numquam,
+                        consequuntur, provident sint! Commodi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card4">
+                <div class="image">
+                    <img src="logo.jpg" alt="CocaCola logo" width="200px" height="150px">
+                </div>
+
+                <div class="card-content">
+                    <div class="name">
+                        <p>Coca Cola</p>
+                    </div>
+                    <div class="para">
+                        <p>Steve Jobs - CEO</p>
+                    </div>
+                    <hr size="2px" color="black">
+                    <p>
+                        Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        sit amet consectetur adipisicing elit. Est temporibus labore sit voluptatibus.
+                        Animi cum beatae eos quos odit qui repellendus quo officia quaerat aperiam numquam,
+                        consequuntur, provident sint! Commodi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="left">
+            <h2>Site Map</h2><br><br>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Who We Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="middle">
+            <h2>Client Testimonials</h2><br><br>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores tempore et sit, nihil nemo vero ducimus, nostrum
+                debitis modi reiciendis unde numquam. Quae perferendis,
+                itaque doloribus dolorem modi dolore enim.<br><br>
+                Steve Simon,<br> CEO Windoor Foods
+            </p>
+        </div>
+
+        <div class="right">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/place/Tundikhel+Road,+Tansen+32500/@27.8680961,83.5457384,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x39967f7040b82b1d:0xb7142bb9805c4488!2sTansen+32500!3b1!8m2!3d27.861901!4d83.5443287!3m4!1s0x3996792b2d89ace5:0x8a1b5a00f5a60d2f!8m2!3d27.8680878!4d83.5462814"
+                    width="350" height="250" frameborder="0" style="border: 0;" allowfullscreen=""
+                    aria-hidden="false"></iframe>
+            </div>
+
+            <div class="contact">
+                <h3>Where are we?</h3><br>
+                Ason Tole, Tansen, Palpa, Nepal<br><br>
+                P.O. Box: 1012<br><br>
+                +977 012323244
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
